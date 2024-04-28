@@ -8,10 +8,10 @@
 
 <div align="center">
   <a href="https://doi.org/10.1111/biom.13701">
-    <img src="https://img.shields.io/badge/DOI-doi.org%2F10.1111%2Fbiom.13701-blue" alt="DOI">
+    <img src="https://img.shields.io/badge/DOI-doi.org%2F10.1111%2Fbiom.13701-garnet?color=%23840028" alt="DOI">
   </a>
   <a href="https://doi.org/10.1111/biom.13457">
-    <img src="https://img.shields.io/badge/DOI-doi.org%2F10.1111%2Fbiom.13457-blue" alt="DOI">
+    <img src="https://img.shields.io/badge/DOI-doi.org%2F10.1111%2Fbiom.13457-garnet?color=%23840028" alt="DOI">
   </a>
 </div>
 
