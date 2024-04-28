@@ -26,15 +26,10 @@ scDECO is an R package for estimating differential co-expression in single-cell 
 The package contains implementations for two different Bayesian models:
 1. `scDECO.cop`
    * Gaussian copula model
-   * Support for NB, ZINB, GA, ZIGA, Beta, ZIBeta marginals
-   * Marginal means modeled as covariate-dependent
-   * ZINF parameters modeled as covariate-dependent
+   * The copula correlation parameter is used to impart covariate-dependent correlation between the marginals
 2. `scDECO.pg`
    * Poisson-Gamma model
-   * Support for ZINB marginals
-   * Marginal means modeled as constant
-   * ZINF parameters modeled as functions of marginal means
-
+   * A latent bivariate normal is used to impart covariate-dependent correlation between the means of the marginals    
 
 
 
