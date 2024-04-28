@@ -21,7 +21,7 @@
 
 ## Description
 
-Differential co-expression refers to covariate-dependence in the correlation between two random variables $\boldsymbol{X}_1, \boldsymbol{X}_2$. Observe in the below plot how the correlation between $\boldsymbol{X}_1$ and $\boldsymbol{X}_2$ increases as the value of covariate $\boldsymbol{X}_3$ increases.
+Differential co-expression refers to the phenomenon where the correlation between two random variables $\boldsymbol{X}_1, \boldsymbol{X}_2$ depends in some way on covariates. Observe in the below plot how the correlation between $\boldsymbol{X}_1$ and $\boldsymbol{X}_2$ increases as the value of covariate $\boldsymbol{X}_3$ increases.
 
 <img src="images/dynamic_corr_plot.svg" alt="differential coexpression" width="600">
 
