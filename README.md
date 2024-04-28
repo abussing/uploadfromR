@@ -42,7 +42,7 @@ library(scDECO)
 
 ## Usage
 
-We will the illustrate `scDECO.cop` by simulating and fitting ZINB, ZIGA data. `scDECO.cop` models covariates as known quantities and thus we can simulate them from any distribution we desire.
+We will the illustrate `scDECO.cop` by simulating and fitting ZINB, ZIGA data.
 
 ```{r}
 n <- 2500
@@ -80,7 +80,7 @@ estmat
 
 ```
 
-And we will illustrate `scDECO.pg` by simulating correlated poisson-gamma data. `scDECO.pg` requires that the covariate be negative binomial.
+And we will illustrate `scDECO.pg` by simulating correlated poisson-gamma data.
 
 ```{r}
 n <- 2500
