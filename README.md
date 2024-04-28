@@ -59,6 +59,7 @@ alpha1.use = 7 # alpha parameter for margin 1
 alpha2.use = 3 # alpha parameter for marign2
 tau.use = c(-0.2, .3) # rho parameters
 
+# choose the marginals
 marginals.use <- c("ZINB", "ZIGA")
 
 # fit the model
