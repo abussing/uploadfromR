@@ -84,24 +84,18 @@ And we will illustrate `scDECO.pg` by simulating correlated poisson-gamma data.
 
 ```{r}
 n <- 2500
-phi1_use <- 4 # over-dispersion parameter for 1st marginal
-phi2_use <- 4 # over-dispersion parameter for 2nd marginal
-phi3_use <- 1/7 # over-dispersion parameter for covariate
-mu1_use <- 15 # mean parameter for 1st marginal
-mu2_use <- 15 # mean parameter for 2nd marginal
-mu3_use <- 7 # mean parameter for covariate
-b0_use <- -3 # intercept of logit-transformed zero-inflation parameter
-b1_use <- 0.1 # slope of logit-transformed zero-inflation parameter
-tau0_use <- -2 # intercept of link-transformed correlation parameter
-tau1_use <- 0.4 # slope of link-transformed correlation parameter
+phi.use <- c(4, 4, 1/7) # over-dispersion parameters for the two marginals and the covariate
+mu.use <- c(15, 15, 7) # mean parameters for the two marginals and the covariate
+b.use <- c(-3, 0.1) # zero-inflation parameters
+tau.use <- c(-2, 0.4) # correlation parameters
 
-simdat <- scdeco.sim.pg(N=1000, b0=b0_use, b1=b1_use,
-                        phi1=phi1_use, phi2=phi2_use, phi3=phi3_use,
-                        mu1=mu1_use, mu2=mu2_use, mu3=mu3_use,
-                        tau0=tau0_use, tau1=tau1_use)
+simdat <- scdeco.sim.pg(N=n, b0=b.use[1], b1=b.use[2],
+                        phi1=phi.use[1], phi2=phi.use[2], phi3=phi.use[3],
+                        mu1=mu.use[1], mu2=mu.use[2], mu3=mu.use[3],
+                        tau0=tau.use[1], tau1=tau.use[2])
 
 mcmc.out <- scdeco.pg(dat=simdat,
-                      b0=b0_use, b1=b1_use,
+                      b0=b.use[1], b1=b.use[2],
                       adapt_iter=100,
                       update_iter=100,
                       coda_iter=1000,
@@ -109,9 +103,7 @@ mcmc.out <- scdeco.pg(dat=simdat,
                       coda_burnin=100)
 
 estmat <- cbind(mcmc.out$quantiles[,1],
-                c(1/phi1_use, 1/phi2_use, 1/phi3_use,
-                mu1_use, mu2_use, mu3_use,
-                tau0_use, tau1_use),
+                c(1/phi.use, mu.use, tau.use),
                 mcmc.out$quantiles[,c(3,5)])
 colnames(estmat) <- c("lower", "true", "est", "upper")
 estmat
