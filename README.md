@@ -51,12 +51,12 @@ n <- 2500
 x.use = rnorm(n) # mu and rho covariate(s)
 w.use = runif(n,-1,1) # ZINF covariate(s)
 
-eta1.use = c(-2.2, 0.7) # ZINF parameters for marginal 1
-eta2.use = c(-2, 0.8) # ZINF parameters for marginal2
-beta1.use = c(1,0.5) # mean parameters for marginal 1
-beta2.use = c(1,1) # mean parameters for marignal 2
-alpha1.use = 7 # alpha parameter for margin 1
-alpha2.use = 3 # alpha parameter for marign2
+eta1.use = c(-2.2, 0.7) # ZINF parameters for 1st marginal
+eta2.use = c(-2, 0.8) # ZINF parameters for 2nd marginal
+beta1.use = c(1,0.5) # mean parameters for 1st marginal
+beta2.use = c(1,1) # mean parameters for 2nd marginal
+alpha1.use = 7 # alpha parameter for 1st marginal
+alpha2.use = 3 # alpha parameter for 2nd marginal
 tau.use = c(-0.2, .3) # rho parameters
 
 # choose the marginals
