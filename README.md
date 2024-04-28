@@ -48,8 +48,8 @@ We will the illustrate the flexibility of `scDECO.cop` by simulating and fitting
 n <- 2500
 
 # simulate 
-x.use = rnorm(n) # covariate(s) mu and rho are dependent on
-w.use = runif(n,-1,1) # covariate(s) ZINF is dependent on
+x.use = rnorm(n) # mu and rho covariate(s)
+w.use = runif(n,-1,1) # ZINF covariate(s)
 
 eta1.use = c(-2.2, 0.7) # ZINF parameters for marginal 1
 eta2.use = c(-2, 0.8) # ZINF parameters for marginal2
