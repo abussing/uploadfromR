@@ -42,6 +42,8 @@ library(scDECO)
 
 ## Usage
 
+We will the illustrate the flexibility of `scDECO.cop` by simulating and fitting ZINB, ZIGA data. 
+
 ```{r}
 n <- 2500
 
@@ -56,6 +58,25 @@ beta2.use = c(1,1) # mean parameters for marignal 2
 alpha1.use = 7 # alpha parameter for margin 1
 alpha2.use = 3 # alpha parameter for marign2
 tau.use = c(-0.2, .3) # rho parameters
+
+marginals.use <- c("ZINB", "ZIGA")
+
+# fit the model
+y.use <- scdeco.sim.cop(marginals=marginals.use, x=x.use,
+                    eta1.true=eta1.use, eta2.true=eta2.use,
+                    beta1.true=beta1.use, beta2.true=beta2.use,
+                    alpha1.true=alpha1.use, alpha2.true=alpha2.use,
+                    tau.true=tau.use, w=w.use)
+mcmc.out <- scdeco.cop(y=y.use, x=x.use, marginals=marginals.use, w=w.use,
+                     n.mcmc=1000, burn=100, thin=5)
+
+lowerupper <- t(apply(mcmc.out, 2, quantile, c(0.025, 0.5, 0.975)))
+estmat <- cbind(lowerupper[,1],
+                c(eta1.use, eta2.use, beta1.use, beta2.use, alpha1.use, alpha2.use, tau.use),
+                lowerupper[,c(2,3)])
+colnames(estmat) <- c("lower", "trueval", "estval", "upper")
+estmat
+
 ```
 
 
