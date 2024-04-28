@@ -1,6 +1,9 @@
 <p align="center">
   <img src="./images/scdeco_logo.svg" alt="scDECO logo" width="400">
 </p>
+<p align="center">
+  <i align="center"><ins>s</ins>ingle-<ins>c</ins>ell <ins>d</ins>iff<ins>e</ins>rential <ins>co</ins>-expression</i>
+</p>
 
 <div align="center">
   <a href="https://doi.org/10.1111/biom.13701">
@@ -17,9 +20,7 @@
 
 ## Description
 
-scDECO is an R package for modeling <ins>s</ins>ingle-<ins>c</ins>ell <ins>d</ins>iff<ins>e</ins>rential <ins>co</ins>-expression.
-
-Differential co-expression refers to the phenomenon of correlation between two random variables $\boldsymbol{X}_1, \boldsymbol{X}_2$ being covariate-dependent. 
+Differential co-expression refers to the phenomenon where correlation between two random variables $\boldsymbol{X}_1, \boldsymbol{X}_2$ varies depending on covariate(s). 
 
 <img src="images/dynamic_corr_plot.svg" alt="Differential Co-expression" width="600">
 
