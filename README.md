@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./images/scdeco_logo.svg" alt="Size Limit CLI" width="400">
+  <img src="./images/scdeco_logo.svg" alt="scDECO logo" width="400">
 </p>
 
 <div align="center">
@@ -17,7 +17,9 @@
 
 ## Description
 
-scDECO is an R package for modeling <ins>s</ins>ingle-<ins>c</ins>ell <ins>d</ins>iff<ins>e</ins>rential <ins>co</ins>-expression. 
+scDECO is an R package for modeling <ins>s</ins>ingle-<ins>c</ins>ell <ins>d</ins>iff<ins>e</ins>rential <ins>co</ins>-expression. Differential co-expression refers to the phenomenon where the correlation between two random variables is dependent on covariates. 
+
+<img src="images/dynamic_corr_plot.svg" alt="Differential Co-expression" width="300">
 
 
 ## Installation
