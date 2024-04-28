@@ -24,12 +24,7 @@
 Differential co-expression refers to the phenomenon where correlation between two random variables $\boldsymbol{X}_1, \boldsymbol{X}_2$ varies depending on covariate(s). 
 
 <img src="images/dynamic_corr_plot.svg" alt="Differential Co-expression" width="600">
-
-The above plot demonstrates how $\text{corr}\left(\boldsymbol{X}_1, \boldsymbol{X}_2\right)$ goes from negative to positive as the value of $\boldsymbol{X}_3$ increases.
-
-
-
-
+*Caption: $\text{corr}\left(\boldsymbol{X}_1, \boldsymbol{X}_2\right)$ goes from negative to positive as the value of $\boldsymbol{X}_3$ increases.*
 
 ## Installation
 
