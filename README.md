@@ -27,7 +27,7 @@ The package contains implementations for two different Bayesian models:
 1. `scDECO.cop`: a Gaussian copula model with flexible, covariate-dependent, optionally zero-inflated marginals
 2. `scDECO.pg`: a zero-inflated Poisson-Gamma model with correlation imparted through a latent bivariate normal variable
 
-Along with `scdeco.cop.sim` and `scdeco.pg.sim` functions to simulate data from their corresponding models.
+Along with `scdeco.cop.sim` and `scdeco.pg.sim` functions to simulate data from each model.
 
 
 ## Installation
