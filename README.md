@@ -84,6 +84,7 @@ And we will illustrate `scDECO.pg` by simulating correlated poisson-gamma data.
 
 ```{r}
 n <- 2500
+
 phi.use <- c(4, 4, 1/7) # over-dispersion parameters for the two marginals and the covariate
 mu.use <- c(15, 15, 7) # mean parameters for the two marginals and the covariate
 b.use <- c(-3, 0.1) # zero-inflation parameters
