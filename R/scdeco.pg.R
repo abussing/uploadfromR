@@ -16,14 +16,14 @@
 #'
 #' phi1_use <- 4
 #' phi2_use <- 4
-#' phi3_use <- 1/6
+#' phi3_use <- 1/7
 #' mu1_use <- 15
 #' mu2_use <- 15
 #' mu3_use <- 7
-#' b0_use <- 0.6882
-#' b1_use <- -0.2995
-#' tau0_use <- 0.07
-#' tau1_use <- 0.05
+#' b0_use <- -3
+#' b1_use <- 0.1
+#' tau0_use <- -2
+#' tau1_use <- 0.4
 #'
 #' simdat <- scdeco.sim.pg(N=1000, b0=b0_use, b1=b1_use,
 #'                         phi1=phi1_use, phi2=phi2_use, phi3=phi3_use,
