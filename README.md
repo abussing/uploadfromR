@@ -24,8 +24,8 @@
 scDECO is an R package for estimating differential co-expression in single-cell RNA-seq data. 
 
 The package contains implementations for two different Bayesian models:
-1. `scDECO.cop`: a Gaussian copula model
-2. `scDECO.pg`: a Poisson-Gamma model
+1. `scDECO.cop`: a Gaussian copula model with flexible, covariate-dependent, optionally zero-inflated marginals
+2. `scDECO.pg`: a zero-inflated Poisson-Gamma model with correlation imparted through a latent bivariate normal variable
 
 
 
