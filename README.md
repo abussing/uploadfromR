@@ -1,6 +1,7 @@
 <p align="center">
   <img src="./images/scdeco_logo.svg" alt="scDECO logo" width="400">
 </p>
+
 <p align="center">
   <i align="center"><ins>s</ins>ingle-<ins>c</ins>ell <ins>d</ins>iff<ins>e</ins>rential <ins>co</ins>-expression</i>
 </p>
