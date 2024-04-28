@@ -3,8 +3,9 @@
 </p>
 
 <p align="center">
-  <i style="text-align: center;">modeling single-cell Diff<span style="text-decoration: underline;">E</span>rential <span style="text-decoration: underline;">CO</span>expression</i>
+  <i>modeling single-cell diff<span style="text-decoration: underline;">e</span>rential <span style="text-decoration: underline;">co</span>-expression</i>
 </p>
+
 
 
 
