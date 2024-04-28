@@ -7,9 +7,6 @@
 </p>
 
 
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
 ## Description
 
 Quick project description goes here. What is the project about and why is it useful?
