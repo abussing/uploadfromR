@@ -2,7 +2,7 @@
   <img src="./images/scdeco_logo.svg" alt="Size Limit CLI" width="400">
 </p>
 
-### modeling <ins>s</ins>ingle-<ins>c</ins>ell <ins>d</ins>iffer<ins>e</ins>ntial <ins>co</ins>-expression
+<span align="center"> <h3> <ins>s</ins>ingle-<ins>c</ins>ell <ins>d</ins>iffer<ins>e</ins>ntial <ins>co</ins>-expression </h3> </span>
 
 
 <p align="center">
