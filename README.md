@@ -36,6 +36,17 @@ The package contains implementations for two different Bayesian models:
   * ZINF parameters modeled as functions of marginal means
 
 
+1. First item
+   * Sub-item 1.1
+   * Sub-item 1.2
+2. Second item
+   * Sub-item 2.1
+   * Sub-item 2.2
+3. Third item
+   * Sub-item 3.1
+   * Sub-item 3.2
+
+
 
 Differential co-expression refers to covariate-dependence in the correlation between two random variables $X_1, X_2$. 
 
