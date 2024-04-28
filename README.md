@@ -21,9 +21,16 @@
 
 ## Description
 
-Differential co-expression refers to the phenomenon where the correlation between two random variables $X_1, X_2$ is covariate-dependent. 
+scDECO is an R package for estimating differential co-expression in single-cell RNA-seq data. It contains implementations for two different Bayesian models:
+1. \boldsymbol{scDECO.cop}: A Gaussian copula model with flexible, covariate-dependent, and optionally zero-inflated marginals. 
+2. \boldsymbol{scDECO.pg}: A Poisson-Gamma model with zero-inflated negative binomial marginals. Dependence between the two marginals is induced through a bivariate normal latent variable with covariate-dependent correlation parameter.
 
-In the below plot, it can be seen how the correlation between $X_1$ and $X_2$ changes from strongly negative to strongly positive as the value of covariate $X_3$ grows larger.
+
+
+
+Differential co-expression refers to covariate-dependence in the correlation between two random variables $X_1, X_2$. 
+
+For exampthe correlation between $X_1$ and $X_2$ changes from strongly negative to strongly positive as the value of covariate $X_3$ grows larger.
 
 <img src="images/dynamic_corr_plot.svg" alt="differential coexpression" width="600">
 
