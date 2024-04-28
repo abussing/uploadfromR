@@ -6,8 +6,6 @@
   <a href="https://doi.org/10.1111/biom.13701">
     <img src="https://img.shields.io/badge/DOI-doi.org%2F10.1111%2Fbiom.13701-blue" alt="DOI">
   </a>
-</div>
-<div align="center">
   <a href="https://doi.org/10.1111/biom.13457">
     <img src="https://img.shields.io/badge/DOI-doi.org%2F10.1111%2Fbiom.13457-blue" alt="DOI">
   </a>
