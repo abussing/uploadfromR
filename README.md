@@ -28,6 +28,11 @@ The package contains implementations for two different Bayesian models:
 2. `scDECO.pg`: a zero-inflated Poisson-Gamma model with correlation imparted through a latent bivariate normal variable
 
 
+## Installation
+
+```{r, eval=FALSE, message=FALSE, warning=FALSE}
+devtools::install_github("YenYiHo-Lab/scDECO")
+```
 
 
 Differential co-expression refers to covariate-dependence in the correlation between two random variables $X_1, X_2$. 
@@ -35,13 +40,6 @@ Differential co-expression refers to covariate-dependence in the correlation bet
 For exampthe correlation between $X_1$ and $X_2$ changes from strongly negative to strongly positive as the value of covariate $X_3$ grows larger.
 
 <img src="images/dynamic_corr_plot.svg" alt="differential coexpression" width="600">
-
-## Installation
-
-```{r, eval=FALSE, message=FALSE, warning=FALSE}
-devtools::install_github("YenYiHo-Lab/scDECO")
-```
-
 
 
 
