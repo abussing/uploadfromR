@@ -3,8 +3,9 @@
 </p>
 
 <p align="center">
-  <i align="center">modeling <u>s</u>ingle-<u>c</u>ell <u>D</u>iff<u>E</u>rential <u>CO</u>expression</i>
+  <i style="text-align: center;">modeling single-cell Diff<span style="text-decoration: underline;">E</span>rential <span style="text-decoration: underline;">CO</span>expression</i>
 </p>
+
 
 
 ## Description
