@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <i align="center">modeling <u>s</u>ingle-<u>c</u>ell <u>D<\u>iff<u>E</u>rential <u>CO</u>expression</i>
+  <i align="center">modeling <u>s</u>ingle-<u>c</u>ell <u>D</u>u>iff<u>E</u>rential <u>CO</u>expression</i>
 </p>
 
 
