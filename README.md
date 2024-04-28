@@ -17,7 +17,7 @@
 
 ## Description
 
-scDECO is an R package for modeling differential co-expression in single-cell RNA-seq data. 
+scDECO is an R package for modeling <ins>s</ins>ingle-<ins>c</ins>ell <ins>d</ins>iff<ins>e</ins>rential <ins>co</ins>-expression. 
 
 
 ## Installation
