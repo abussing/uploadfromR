@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <i>modeling single-cell diff<span style="text-decoration: underline;">e</span>rential <span style="text-decoration: underline;">co</span>-expression</i>
+  <i>modeling <ins>s</ins>ingle-<ins>c</ins>ell <ins>d</ins>iffer<ins>e</ins>ntial <ins>co</ins>-expression</i>
 </p>
 
 
