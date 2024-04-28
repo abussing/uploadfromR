@@ -23,7 +23,7 @@
 
 scDECO is an R package for estimating differential co-expression in single-cell RNA-seq data. 
 
-Differential co-expression refers to the situation where the correlation between two random variables $X_1, X_2$ depends on the level of additional covariate(s). 
+Differential co-expression refers to the situation where the correlation between two random variables $X_1, X_2$ changes with respect to the level of additional covariate(s). 
 
 <img src="images/dynamic_corr_plot.svg" alt="differential coexpression" width="600">
 
