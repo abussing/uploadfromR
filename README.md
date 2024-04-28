@@ -62,15 +62,18 @@ tau.use = c(-0.2, .3) # rho parameters
 # choose the marginals
 marginals.use <- c("ZINB", "ZIGA")
 
-# fit the model
+# simulate data
 y.use <- scdeco.sim.cop(marginals=marginals.use, x=x.use,
                     eta1.true=eta1.use, eta2.true=eta2.use,
                     beta1.true=beta1.use, beta2.true=beta2.use,
                     alpha1.true=alpha1.use, alpha2.true=alpha2.use,
                     tau.true=tau.use, w=w.use)
+
+# fit the model
 mcmc.out <- scdeco.cop(y=y.use, x=x.use, marginals=marginals.use, w=w.use,
                      n.mcmc=1000, burn=100, thin=5)
 
+# extract estimates and confidence intervals
 lowerupper <- t(apply(mcmc.out, 2, quantile, c(0.025, 0.5, 0.975)))
 estmat <- cbind(lowerupper[,1],
                 c(eta1.use, eta2.use, beta1.use, beta2.use, alpha1.use, alpha2.use, tau.use),
@@ -90,11 +93,13 @@ mu.use <- c(15, 15, 7) # mean parameters for the two marginals and the covariate
 b.use <- c(-3, 0.1) # zero-inflation parameters
 tau.use <- c(-2, 0.4) # correlation parameters
 
+# simulate the data
 simdat <- scdeco.sim.pg(N=n, b0=b.use[1], b1=b.use[2],
                         phi1=phi.use[1], phi2=phi.use[2], phi3=phi.use[3],
                         mu1=mu.use[1], mu2=mu.use[2], mu3=mu.use[3],
                         tau0=tau.use[1], tau1=tau.use[2])
 
+# fit the model
 mcmc.out <- scdeco.pg(dat=simdat,
                       b0=b.use[1], b1=b.use[2],
                       adapt_iter=100,
@@ -103,6 +108,7 @@ mcmc.out <- scdeco.pg(dat=simdat,
                       coda_thin=5,
                       coda_burnin=100)
 
+# extract the estimates and confidence intervals
 estmat <- cbind(mcmc.out$quantiles[,1],
                 c(1/phi.use, mu.use, tau.use),
                 mcmc.out$quantiles[,c(3,5)])
