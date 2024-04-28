@@ -23,7 +23,7 @@
 
 Differential co-expression refers to the phenomenon where the correlation between two random variables $X_1, X_2$ is covariate-dependent. 
 
-Observe in the below plot how the correlation between $X_1$ and $X_2$ changes from strongly negative to strongly positive as the value of covariate $X_3$ grows larger.
+In the below plot, it can be seen how the correlation between $X_1$ and $X_2$ changes from strongly negative to strongly positive as the value of covariate $X_3$ grows larger.
 
 <img src="images/dynamic_corr_plot.svg" alt="differential coexpression" width="600">
 
