@@ -31,6 +31,7 @@ The package contains implementations for two different Bayesian models:
 
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
 devtools::install_github("YenYiHo-Lab/scDECO")
+library(scDECO)
 ```
 
 
