@@ -103,9 +103,10 @@ estmat
 
 ```{r}
 n <- 2500
+b.use <- c(-3,0.1)
 
 # simulate the data
-simdat <- scdeco.sim.pg(N=n, b0=-3, b1=0.1,
+simdat <- scdeco.sim.pg(N=n, b0=b.use[1], b1=b.use[2],
                         phi1=4, phi2=4, phi3=1/7,
                         mu1=15, mu2=15, mu3=7,
                         tau0=-2, tau1=0.4)
