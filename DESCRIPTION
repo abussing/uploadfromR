@@ -12,3 +12,7 @@ LazyData: true
 RoxygenNote: 7.3.1
 URL: https://github.com/abussing/scDECO
 BugReports: https://github.com/abussing/scDECO/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
