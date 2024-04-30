@@ -115,16 +115,16 @@ Parameters:
 * `N`: Sample size for the simulated data.
 * `b0`: The scalar intercept coefficient of the zero-inflation parameter. 
 * `b1`: The scalar slope coefficient of the zero-inflation parameter. 
-* `phi1`: The scalar over-dispersion parameter of the 1st NB marginal.
-* `phi2`: The over-dispersion parameter of the 2nd NB marginal.
-* `phi3`: The over-dispersion parameter of the NB covariate vector. 
-* `mu1`: The mean parameter of the 1st NB marginal.
-* `mu2`: The mean parameter of the 2nd NB marginal.
-* `mu3`: The mean parameter of the NB covariate vector.
+* `phi1`: The scalar over-dispersion parameter of the 1st ZINB marginal.
+* `phi2`: The over-dispersion parameter of the 2nd ZINB marginal.
+* `phi3`: The over-dispersion parameter of the ZINB covariate vector. 
+* `mu1`: The mean parameter of the 1st ZINB marginal.
+* `mu2`: The mean parameter of the 2nd ZINB marginal.
+* `mu3`: The mean parameter of the ZINB covariate vector.
 * `tau0`: The intercept coefficient of the correlation parameter. 
 * `tau1`: The slope coefficient of the correlation parameter.
 
-This will simulate a 3-column matrix of $N$ rows, where the first two columns are observations and the third column is the NB covariate which will be used in regressing the correlation parameter of the scdeco.pg model. 
+This will simulate a 3-column matrix of $N$ rows, where the first two columns are observations and the third column is the ZINB covariate which will be used in regressing the correlation parameter of the scdeco.pg model. 
 
 ```{r}
 # fit the model
@@ -137,7 +137,7 @@ mcmc.out <- scdeco.pg(dat=simdat,
                       coda_burnin=1000)
 ```
 Parameters:
-* `dat`: The 3-column matrix where the first two columns are observations and the third column is the NB covariate. An additional covariate can be added as a 4th column if desired.
+* `dat`: The 3-column matrix where the first two columns are observations and the third column is the ZINB covariate. An additional covariate can be added as a 4th column if desired.
 * `adapt_iter`: The number of adaptive iterations to run.
 * `update_iter`: The number of update iterations to run.
 * `coda_iter`: The number of MCMC iterations to run after the adapt and update.
