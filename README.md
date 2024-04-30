@@ -93,7 +93,7 @@ One can obtain estimates and confidence intervals for each parameter by looking 
 # extract estimates and confidence intervals
 lowerupper <- t(apply(mcmc.out, 2, quantile, c(0.025, 0.5, 0.975)))
 estmat <- cbind(lowerupper[,1],
-                c(eta1.use, eta2.use, beta1.use, beta2.use, alpha1.use, alpha2.use, tau.use),
+                c(c(-2, 0.8), c(-2, 0.8), c(1, 0.5), c(1, 1), 7, 3, c(-0.2, .3)),
                 lowerupper[,c(2,3)])
 colnames(estmat) <- c("lower", "trueval", "estval", "upper")
 estmat
