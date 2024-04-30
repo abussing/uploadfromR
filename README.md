@@ -50,9 +50,10 @@ n <- 2500
 
 x.use <- rnorm(n)
 w.use <- runif(n,-1,1)
+marginals.use <- c("ZINB", "ZIGA")
 
 # simulate data
-y.use <- scdeco.sim.cop(marginals=c("ZINB", "ZIGA"), x=x.use,
+y.use <- scdeco.sim.cop(marginals=marginals.use, x=x.use,
                     eta1.true=c(-2, 0.8), eta2.true=c(-2, 0.8),
                     beta1.true=c(1, 0.5), beta2.true=c(1, 1),
                     alpha1.true=7, alpha2.true=3,
