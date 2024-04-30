@@ -35,7 +35,7 @@ The package contains implementations for two different Bayesian models:
 
 ## Installation
 
-```{r, eval=FALSE, message=FALSE, warning=FALSE}
+```{r}
 devtools::install_github("YenYiHo-Lab/scDECO")
 library(scDECO)
 ```
@@ -46,37 +46,40 @@ library(scDECO)
 
 We will the illustrate `scDECO.cop` by simulating and fitting ZINB, ZIGA data.
 
-
-
 ```{r}
 n <- 2500
 
-# simulate 
-x.use = rnorm(n) # mu and rho covariate(s)
-w.use = runif(n,-1,1) # ZINF covariate(s)
-
-eta1.use = c(-2.2, 0.7) # ZINF parameters for 1st marginal
-eta2.use = c(-2, 0.8) # ZINF parameters for 2nd marginal
-beta1.use = c(1,0.5) # mean parameters for 1st marginal
-beta2.use = c(1,1) # mean parameters for 2nd marginal
-alpha1.use = 7 # alpha parameter for 1st marginal
-alpha2.use = 3 # alpha parameter for 2nd marginal
-tau.use = c(-0.2, .3) # rho parameters
-
-# choose the marginals
-marginals.use <- c("ZINB", "ZIGA")
-
 # simulate data
-y.use <- scdeco.sim.cop(marginals=marginals.use, x=x.use,
-                    eta1.true=eta1.use, eta2.true=eta2.use,
-                    beta1.true=beta1.use, beta2.true=beta2.use,
-                    alpha1.true=alpha1.use, alpha2.true=alpha2.use,
-                    tau.true=tau.use, w=w.use)
+y.use <- scdeco.sim.cop(marginals=c("ZINB", "ZIGA"), x=rnorm(n),
+                    eta1.true=c(-2, 0.8), eta2.true=c(-2, 0.8),
+                    beta1.true=c(1, 0.5), beta2.true=c(1, 1),
+                    alpha1.true=7, alpha2.true=3,
+                    tau.true=c(-0.2, .3), w=runif(n,-1,1))
+```
+Parameters:
+* `marginals`: The two marginals. Options are NB, ZINB, GA, ZIGA, Beta, ZIBEta
+* `x`: The vector (or matrix) containing the covariate values to be regressed for mean and rho parameters.
+* `eta1.true`: The coefficients of the 1st marginal's zero-inflation parameter. Link function is logit link.
+* `eta2.true`: The coefficients of the 2nd marginal's zero-inflation parameter. Link function is logit link.
+* `beta1.true`: The coefficients of the 1st marginal's mean parameter. Link function is log link.
+* `beta2.true`: The coefficients of the 2nd marginal's mean parameter. Link function is log link.
+* `alpha1.true`: The coefficient of the 1st marginal's second parameter. Link function is log link.
+* `alpha2.true`: The coefficient of the 2nd marginal's second parameter. Link function is log link.
+* `tau.true`: The coefficient of the correlation parameter. Link function is atanh(x/2).
+* `w`: A vector (or matrix) containing the covariate values to be regressed for zero-inflation parameters.
 
+```{r}
 # fit the model
 mcmc.out <- scdeco.cop(y=y.use, x=x.use, marginals=marginals.use, w=w.use,
                      n.mcmc=5000, burn=1000, thin=10)
+```
+Parameters:
+* y`: 2-column matrix with the dependent variable observations.
+* `n.mcmc`: The number of MCMC iterations to run.
+* `burn`: The number of MCMC iterations to burn from the beginning of the chain.
+* `thin`: The number of MCMC iterations to thin.
 
+```{r
 # extract estimates and confidence intervals
 lowerupper <- t(apply(mcmc.out, 2, quantile, c(0.025, 0.5, 0.975)))
 estmat <- cbind(lowerupper[,1],
@@ -84,7 +87,6 @@ estmat <- cbind(lowerupper[,1],
                 lowerupper[,c(2,3)])
 colnames(estmat) <- c("lower", "trueval", "estval", "upper")
 estmat
-
 ```
 
 And we will illustrate `scDECO.pg` by simulating correlated poisson-gamma data.
