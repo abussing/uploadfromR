@@ -42,7 +42,11 @@ library(scDECO)
 
 ## Usage
 
+### `scdeco.cop`
+
 We will the illustrate `scDECO.cop` by simulating and fitting ZINB, ZIGA data.
+
+
 
 ```{r}
 n <- 2500
@@ -116,6 +120,13 @@ colnames(estmat) <- c("lower", "true", "est", "upper")
 estmat
 
 ```
+
+## 
+
+
+
+
+
 
 
 
