@@ -82,7 +82,7 @@ colnames(estmat) <- c("lower", "trueval", "estval", "upper")
 estmat
 
 ```
-<img src="images/scdeco.cop_output.png" alt="differential coexpression" width="700">
+<img src="images/scdeco.cop_output.png" alt="differential coexpression" width="400">
 
 
 
