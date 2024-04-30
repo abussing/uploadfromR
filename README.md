@@ -141,16 +141,9 @@ Parameters:
   
 This will return a matrix where the columns correspond to the different parameters of the model and the rows correspond to MCMC samples where the adapt, update, burn, and thin has already been incorporated. 
 
-One can obtain estimates and confidence intervals for each parameter by looking at quantiles of these MCMC samples.
+One can obtain estimates and confidence intervals for each parameter by looking at quantiles of these MCMC samples using the same code as in the scdeco.cop example.
 
-# extract the estimates and confidence intervals
-estmat <- cbind(mcmc.out$quantiles[,1],
-                c(1/phi.use, mu.use, tau.use),
-                mcmc.out$quantiles[,c(3,5)])
-colnames(estmat) <- c("lower", "true", "est", "upper")
-estmat
 
-```
 
 
 
