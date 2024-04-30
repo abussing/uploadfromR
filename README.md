@@ -121,7 +121,7 @@ estmat
 
 ```
 
-<img src="images/scdeco.pg_output.png" alt="differential coexpression" width="350">
+<img src="images/scdeco.pg_output.png" alt="differential coexpression" width="400">
 
 
 
