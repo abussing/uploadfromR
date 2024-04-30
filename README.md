@@ -48,12 +48,15 @@ library(scDECO)
 ```{r}
 n <- 2500
 
+x.use <- rnorm(n)
+w.use <- runif(n,-1,1)
+
 # simulate data
-y.use <- scdeco.sim.cop(marginals=c("ZINB", "ZIGA"), x=rnorm(n),
+y.use <- scdeco.sim.cop(marginals=c("ZINB", "ZIGA"), x=x.use,
                     eta1.true=c(-2, 0.8), eta2.true=c(-2, 0.8),
                     beta1.true=c(1, 0.5), beta2.true=c(1, 1),
                     alpha1.true=7, alpha2.true=3,
-                    tau.true=c(-0.2, .3), w=runif(n,-1,1))
+                    tau.true=c(-0.2, .3), w=w.use)
 ```
 Parameters:
 * `marginals`: The two marginals. Options are NB, ZINB, GA, ZIGA, Beta, ZIBEta
