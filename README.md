@@ -82,7 +82,7 @@ colnames(estmat) <- c("lower", "trueval", "estval", "upper")
 estmat
 
 ```
-<img src="images/scdeco.cop_output.png" alt="differential coexpression" width="400">
+<img src="images/scdeco.cop_output.png" alt="differential coexpression" width="350">
 
 
 
@@ -106,11 +106,11 @@ simdat <- scdeco.sim.pg(N=n, b0=b.use[1], b1=b.use[2],
 # fit the model
 mcmc.out <- scdeco.pg(dat=simdat,
                       b0=b.use[1], b1=b.use[2],
-                      adapt_iter=100,
-                      update_iter=100,
-                      coda_iter=1000,
-                      coda_thin=5,
-                      coda_burnin=100)
+                      adapt_iter=500,
+                      update_iter=500,
+                      coda_iter=5000,
+                      coda_thin=10,
+                      coda_burnin=1000)
 
 # extract the estimates and confidence intervals
 estmat <- cbind(mcmc.out$quantiles[,1],
@@ -120,6 +120,8 @@ colnames(estmat) <- c("lower", "true", "est", "upper")
 estmat
 
 ```
+
+<img src="images/scdeco.pg_output.png" alt="differential coexpression" width="350">
 
 
 
