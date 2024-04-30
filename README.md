@@ -71,7 +71,7 @@ y.use <- scdeco.sim.cop(marginals=marginals.use, x=x.use,
 
 # fit the model
 mcmc.out <- scdeco.cop(y=y.use, x=x.use, marginals=marginals.use, w=w.use,
-                     n.mcmc=1000, burn=100, thin=5)
+                     n.mcmc=5000, burn=1000, thin=10)
 
 # extract estimates and confidence intervals
 lowerupper <- t(apply(mcmc.out, 2, quantile, c(0.025, 0.5, 0.975)))
@@ -82,6 +82,10 @@ colnames(estmat) <- c("lower", "trueval", "estval", "upper")
 estmat
 
 ```
+<img src="images/scdeco.cop_output.png" alt="differential coexpression" width="700">
+
+
+
 
 And we will illustrate `scDECO.pg` by simulating correlated poisson-gamma data.
 
