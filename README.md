@@ -154,7 +154,3 @@ One can obtain estimates and confidence intervals for each parameter by looking 
 
 
 
-
-
-
-
