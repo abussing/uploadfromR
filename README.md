@@ -25,8 +25,9 @@ scDECO is an R package for estimating differential co-expression in single-cell 
 
 Differential co-expression refers to correlation between two random variables $X_1, X_2$ changing with respect to the value of some covariate(s). 
 
+<p align="center">
 <img src="images/dynamic_corr_plot.svg" alt="differential coexpression" width="700">
-
+</p>
 
 The package contains implementations for two different Bayesian models:
 1. `scDECO.cop`: fits a bivariate Gaussian copula model with flexible, covariate-dependent, optionally zero-inflated marginals
