@@ -82,10 +82,6 @@ colnames(estmat) <- c("lower", "trueval", "estval", "upper")
 estmat
 
 ```
-<img src="images/scdeco.cop_output.png" alt="differential coexpression" width="350">
-
-
-
 
 And we will illustrate `scDECO.pg` by simulating correlated poisson-gamma data.
 
@@ -120,8 +116,6 @@ colnames(estmat) <- c("lower", "true", "est", "upper")
 estmat
 
 ```
-
-<img src="images/scdeco.pg_output.png" alt="differential coexpression" width="400">
 
 
 
