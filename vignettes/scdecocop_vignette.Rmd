@@ -1,8 +1,8 @@
 ---
-title: "scdeco.cop vignette"
+title: "scdecocop_vignette"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{scdeco.cop vignette}
+  %\VignetteIndexEntry{scdecocop_vignette}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
