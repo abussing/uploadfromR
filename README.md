@@ -29,8 +29,8 @@ Differential co-expression refers to correlation between two random variables $X
 
 
 The package contains implementations for two different Bayesian models:
-1. `scDECO.cop`: fits a Gaussian copula model with flexible, covariate-dependent, optionally zero-inflated marginals
-2. `scDECO.pg`: fits a zero-inflated Poisson-Gamma model with correlation imparted through a latent bivariate normal variable
+1. `scDECO.cop`: fits a bivariate Gaussian copula model with flexible, covariate-dependent, optionally zero-inflated marginals
+2. `scDECO.pg`: fits a zero-inflated bivariate Poisson-Gamma model with correlation imparted through a latent bivariate normal variable
 
 
 ## Installation
