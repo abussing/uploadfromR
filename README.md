@@ -105,7 +105,7 @@ simdat <- scdeco.sim.pg(N=n, b0=-3, b1=0.1,
                         phi1=4, phi2=4, phi3=1/7,
                         mu1=15, mu2=15, mu3=7,
                         tau0=-2, tau1=0.4)
-```{r}
+```
 Parameters:
 * `N`: Sample size for the simulated data.
 * `b0`: The scalar intercept coefficient of the zero-inflation parameter. 
@@ -119,7 +119,6 @@ Parameters:
 * `tau0`: The intercept coefficient of the correlation parameter. 
 * `tau1`: The slope coefficient of the correlation parameter.
 
-```
 This will simulate a 3-column matrix of $N$ rows, where the first two columns are observations and the third column is the NB covariate which will be used in regressing the correlation parameter of the scdeco.pg model. 
 
 ```{r}
