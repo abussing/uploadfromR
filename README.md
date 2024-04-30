@@ -146,7 +146,19 @@ One can obtain estimates and confidence intervals for each parameter by looking 
 
 
 
+## Model Details
 
+For details on the exact models, please see the vignette of the scDECO R package.
+
+## Citing
+
+For the scdeco.cop model, please cite
+
+Zichen Ma, Shannon W. Davis, Yen-Yi Ho, Flexible Copula Model for Integrating Correlated Multi-Omics Data from Single-Cell Experiments, Biometrics, Volume 79, Issue 2, June 2023, Pages 1559–1572, https://doi.org/10.1111/biom.13701
+
+For the scdeco.pg model, please cit
+
+Zhen Yang, Yen-Yi Ho, Modeling Dynamic Correlation in Zero-Inflated Bivariate Count Data with Applications to Single-Cell RNA Sequencing Data, Biometrics, Volume 78, Issue 2, June 2022, Pages 766–776, https://doi.org/10.1111/biom.13457
 
 
 
