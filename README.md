@@ -147,7 +147,7 @@ One can obtain estimates and confidence intervals for each parameter by looking 
 
 ## Model Details
 
-For details on the exact models, please see the vignette of the scDECO R package.
+For details on the exact models, please see the vignettes of the scDECO R package.
 
 ## Please Cite
 
