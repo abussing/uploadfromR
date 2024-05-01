@@ -162,7 +162,7 @@ Zhen Yang, Yen-Yi Ho, Modeling Dynamic Correlation in Zero-Inflated Bivariate Co
 
 ## Contact
 
-If you have any questions or found any issues, please contact: hoyen@stat.sc.edu.
+If you have any questions or found any issues, please contact: abussing@email.sc.edu.
 
 
 
