@@ -6,7 +6,7 @@ Author: Who wrote it
 Maintainer: Yen-Yi Ho <hoyen@stat.sc.edu>
 Description: Contains functions for simulating from and fitting dynamic correlation models.
 Imports: MASS, rjags, msm
-License: GPL-3
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.1
