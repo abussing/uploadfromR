@@ -32,11 +32,11 @@
 #'
 #' zenco_out <- scdeco.pg(dat=simdat,
 #'                        b0=b0_use, b1=b1_use,
-#'                        adapt_iter=100,
-#'                        update_iter=100,
-#'                        coda_iter=1000,
-#'                        coda_thin=5,
-#'                        coda_burnin=100)
+#'                        adapt_iter=500,
+#'                        update_iter=500,
+#'                        coda_iter=5000,
+#'                        coda_thin=10,
+#'                        coda_burnin=1000)
 #'
 #' boundsmat <- cbind(zenco_out$quantiles[,1],
 #'                    c(1/phi1_use, 1/phi2_use, 1/phi3_use,
