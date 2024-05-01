@@ -113,9 +113,9 @@ simdat <- scdeco.sim.pg(N=n, b0=b.use[1], b1=b.use[2],
 ```
 Parameters:
 * `N`: Sample size for the simulated data.
-* `b0`: The scalar intercept coefficient of the zero-inflation parameter. 
-* `b1`: The scalar slope coefficient of the zero-inflation parameter. 
-* `phi1`: The scalar over-dispersion parameter of the 1st ZINB marginal.
+* `b0`: The intercept coefficient of the zero-inflation parameter. 
+* `b1`: The slope coefficient of the zero-inflation parameter. 
+* `phi1`: The over-dispersion parameter of the 1st ZINB marginal.
 * `phi2`: The over-dispersion parameter of the 2nd ZINB marginal.
 * `phi3`: The over-dispersion parameter of the ZINB covariate vector. 
 * `mu1`: The mean parameter of the 1st ZINB marginal.
