@@ -41,6 +41,10 @@ devtools::install_github("YenYiHo-Lab/scDECO")
 library(scDECO)
 ```
 
+## Tutorial
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fP-x99MK8LM/0.jpg)](https://www.youtube.com/watch?v=fP-x99MK8LM)
+
 ## Usage
 
 ### `scdeco.cop`
