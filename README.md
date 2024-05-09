@@ -36,6 +36,7 @@ The package contains implementations for two different Bayesian models:
 ## Tutorial
 
 Below is a quick video overview of the scDECO package functionality:
+
 [![youtube image](https://img.youtube.com/vi/fP-x99MK8LM/0.jpg)](https://www.youtube.com/watch?v=fP-x99MK8LM)
 
 
