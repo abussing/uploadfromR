@@ -37,7 +37,7 @@ The package contains implementations for two different Bayesian models:
 
 Quick video tutorial on the package:
 
-[![youtube image](https://img.youtube.com/vi/fP-x99MK8LM/0.jpg)](https://www.youtube.com/watch?v=fP-x99MK8LM)
+[![youtube image](https://img.youtube.com/vi/tsmDzepHIVg/0.jpg)](https://www.youtube.com/watch?v=tsmDzepHIVg)
 
 
 
