@@ -33,6 +33,15 @@ The package contains implementations for two different Bayesian models:
 1. `scDECO.cop`: fits a bivariate Gaussian copula model with flexible, covariate-dependent, optionally zero-inflated marginals
 2. `scDECO.pg`: fits a zero-inflated bivariate Poisson-Gamma model with correlation imparted through a latent bivariate normal variable
 
+## Tutorial
+
+Below is a quick video overview of the scDECO package functionality:
+[![youtube image](https://img.youtube.com/vi/fP-x99MK8LM/0.jpg)](https://www.youtube.com/watch?v=fP-x99MK8LM)
+
+
+
+
+
 
 ## Installation
 
@@ -40,10 +49,6 @@ The package contains implementations for two different Bayesian models:
 devtools::install_github("YenYiHo-Lab/scDECO")
 library(scDECO)
 ```
-
-## Tutorial
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fP-x99MK8LM/0.jpg)](https://www.youtube.com/watch?v=fP-x99MK8LM)
 
 ## Usage
 
