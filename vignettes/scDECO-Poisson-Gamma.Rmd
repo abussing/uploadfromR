@@ -52,11 +52,11 @@ This will simulate a 3-column matrix of $N$ rows, where the first two columns ar
 # fit the model
 mcmc.out <- scdeco.pg(dat=simdat,
                       b0=b.use[1], b1=b.use[2],
-                      adapt_iter=50,# 500,
-                      update_iter=50, # 500,
-                      coda_iter=500, # 5000,
-                      coda_thin=5, # 10,
-                      coda_burnin=100)# 1000)
+                      adapt_iter=5,# 500,
+                      update_iter=5, # 500,
+                      coda_iter=100, # 5000,
+                      coda_thin=1, # 10,
+                      coda_burnin=5)# 1000)
 ```
 
 Parameters:

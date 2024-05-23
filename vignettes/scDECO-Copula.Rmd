@@ -59,7 +59,7 @@ This will simulate a 2-column matrix of `NROW(x)` rows of observations from the 
 ```{r}
 # fit the model
 mcmc.out <- scdeco.cop(y=y.use, x=x.use, marginals=marginals.use, w=w.use,
-                     n.mcmc=500, burn=100, thin=2) # n.mcmc=5000, burn=1000, thin=10
+                     n.mcmc=100, burn=5, thin=1) # n.mcmc=5000, burn=1000, thin=10
 ```
 
 Parameters:
