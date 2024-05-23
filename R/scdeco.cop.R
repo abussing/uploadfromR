@@ -10,6 +10,8 @@
 #'
 #' @import msm
 #'
+#' @importFrom stats cor cov dbeta dgamma dnorm pbeta pgamma pnbinom pnorm qbeta qgamma qnbinom qnorm rbinom rnbinom rnorm rpois runif sd update var
+#'
 #' @return matrix with mcmc samples as rows and columns corresponding to the different parameters
 #' @export
 #'
@@ -317,7 +319,7 @@ llike.GA = function(y,z,mu,alpha,p,rho){
 
   if(length(id0)>0){
     llik = llik + sum(pnorm(qnorm(p[id0]),mean=rho[id0]*z[id0],
-                            sd=sqrt(1-rho[id0]^2),log=T),na.rm=T)
+                            sd=sqrt(1-rho[id0]^2),log.p=T),na.rm=T)
   }
   return(llik)}
 
@@ -337,7 +339,7 @@ llike.Beta = function(y,z,mu,alpha,p,rho){
 
   if(length(id0)>0){
     llik = llik + sum(pnorm(qnorm(p[id0]),mean=rho[id0]*z[id0],
-                            sd=sqrt(1-rho[id0]^2),log=T),na.rm=T)
+                            sd=sqrt(1-rho[id0]^2),log.p=T),na.rm=T)
   }
   return(llik)}
 
